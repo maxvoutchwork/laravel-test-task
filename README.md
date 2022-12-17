@@ -12,20 +12,21 @@ To login website use:
 `email:` admin@abz.agency<br />
 `password:` password<br />
 
-## Project setup
+## Setup Database
 
 ```
-npm install
+php artisan migrate 
+php artisan db:seed    
 ```
 
-### Compiles and hot-reloads for development
+### Setup Passport
 
 ```
-npm run serve
+php artisan passport:install --force 
 ```
 
-### Compiles and minifies for production
+### Setup Server
 
 ```
-npm run build
+php artisan serve
 ```
